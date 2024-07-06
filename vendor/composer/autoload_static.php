@@ -22,8 +22,6 @@ class ComposerStaticInit9ac73dd8ba8bfff9b5db2b0599d7a92c
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Mahin\\Crud\\Console\\Commands\\CrudCommand' => __DIR__ . '/../..' . '/src/Console/Commands/CrudCommand.php',
-        'Mahin\\Crud\\CrudProvider' => __DIR__ . '/../..' . '/src/CrudProvider.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

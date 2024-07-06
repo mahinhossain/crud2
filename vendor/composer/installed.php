@@ -3,7 +3,7 @@
         'name' => 'mahin/crud',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'fe9cdcce39578de227ea16488c5f17fcf24649b2',
+        'reference' => 'd4272feb8d0b7fbd750cf9bbc0fb890c6105fdcc',
         'type' => 'package',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'mahin/crud' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'fe9cdcce39578de227ea16488c5f17fcf24649b2',
+            'reference' => 'd4272feb8d0b7fbd750cf9bbc0fb890c6105fdcc',
             'type' => 'package',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
