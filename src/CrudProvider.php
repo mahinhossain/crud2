@@ -24,7 +24,7 @@ class CrudProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../resources/stubs' => resource_path('stubs'),
-        ], 'crud-generator-stubs');
+        ], 'crud-stubs');
         
     }
 }
