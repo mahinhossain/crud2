@@ -1,0 +1,15 @@
+@extends('backend.layout.master')
+@section('content')
+
+<div class="col-12 grid-margin stretch-card mt-2">
+   <div class="card shadow">
+      <div class="card-body">
+         <form action="{{ route('{{modelNamePluralLowerCase}}.store') }}" method="POST">
+            @csrf
+            {{columnsFormFields}}
+            <button type="submit" class='btn btn-success' >Create</button>
+         </form>
+      </div>
+   </div>
+</div>
+@endsection

@@ -1,0 +1,32 @@
+{
+    "name": "mahin/crud",
+    "description": "crud using atomatic",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mahin\\Crud\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+          "providers": [
+            "Mahin\\Crud\\CrudProvider"
+          ]
+        }
+      },
+    "authors": [
+        {
+            "name": "Mahin Hossain",
+            "email": "41800751+mahinhossain@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+          "type": "path",
+          "url": "packages/mahin/crud"
+        }
+      ],
+    "require": {}
+}

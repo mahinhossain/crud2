@@ -1,0 +1,23 @@
+@extends('backend.layout.master')
+@section('content')
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+         <table class="table table-bordered">
+            <thead>
+               <tr>
+                  <th>ID</th>
+                  {{columnsHeaders}}
+               </tr>
+            </thead>
+            <tbody>
+               <td>{{ ${{modelNameLowerCase}}->id}}</td>
+               {{columnsData}}
+            </tbody>
+         </table>
+         <a href="{{ route('{{modelNamePluralLowerCase}}.index') }}">Back to List</a>
+
+        </div>
+        </div>
+    </div>
+@endsection

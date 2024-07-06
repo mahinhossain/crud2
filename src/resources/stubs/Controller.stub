@@ -1,0 +1,48 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\{{modelName}};
+use Illuminate\Http\Request;
+
+class {{modelName}}Controller extends Controller
+{
+    public function index()
+    {
+        ${{modelNamePluralLowerCase}} = {{modelName}}::all();
+        return view('{{modelNamePluralLowerCase}}.index', compact('{{modelNamePluralLowerCase}}'));
+    }
+
+    public function create()
+    {
+        return view('{{modelNamePluralLowerCase}}.create');
+    }
+
+    public function store(Request $request)
+    {
+        {{modelName}}::create($request->only([{{columnString}}]));
+        return redirect()->route('{{modelNamePluralLowerCase}}.index');
+    }
+
+    public function show({{modelName}} ${{modelNameLowerCase}})
+    {
+        return view('{{modelNamePluralLowerCase}}.show', compact('{{modelNameLowerCase}}'));
+    }
+
+    public function edit({{modelName}} ${{modelNameLowerCase}})
+    {
+        return view('{{modelNamePluralLowerCase}}.edit', compact('{{modelNameLowerCase}}'));
+    }
+
+    public function update(Request $request, {{modelName}} ${{modelNameLowerCase}})
+    {
+        ${{modelNameLowerCase}}->update($request->only([{{columnString}}]));
+        return redirect()->route('{{modelNamePluralLowerCase}}.index');
+    }
+
+    public function destroy({{modelName}} ${{modelNameLowerCase}})
+    {
+        ${{modelNameLowerCase}}->delete();
+        return redirect()->route('{{modelNamePluralLowerCase}}.index');
+    }
+}
